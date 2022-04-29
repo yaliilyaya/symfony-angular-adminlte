@@ -83,8 +83,7 @@
         },
         "post-install-cmd": [
             "@auto-scripts",
-            "yarn install",
-            "yarn encore dev"
+            "yarn install && yarn dev"
         ],
         "post-update-cmd": [
             "@auto-scripts"
