@@ -44,6 +44,8 @@ RUN echo 'deb [trusted=yes] https://repo.symfony.com/apt/ /' | tee /etc/apt/sour
     && apt update \
     && apt install symfony-cli
 
+RUN apt install -y nodejs npm \
+    && npm install --global yarn
 
 
 # Add user for laravel application
