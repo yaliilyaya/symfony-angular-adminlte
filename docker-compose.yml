@@ -13,8 +13,6 @@ services:
       SERVICE_TAGS: dev
     volumes:
       - ./:/project
-    ports:
-      - 25080:8080
 
   #Nginx Service
   webserver:
